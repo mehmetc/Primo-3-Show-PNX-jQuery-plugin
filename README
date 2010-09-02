@@ -36,4 +36,4 @@ Remarks
 - Doesn't work for Primo Central records. PC is a distributed search engine and probably has a different configuration for every customer.
 - Not tested on Internet Explorer.
 - When you restrict the access to the WebServices through 'WS and XS IP' mapping table be aware that the link will not work in certain situations.
- 
+- Will not show dedup pnx records 

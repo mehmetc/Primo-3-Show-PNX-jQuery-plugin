@@ -21,8 +21,7 @@ jQuery(document).ready(function() {
     $('.EXLResultRecordId').each(
     function(index, element) {
         var record_id = $(this).attr('id');
-
-        if (record_id.substring(0, 2) != 'TN') { //skip PrimoCentral records
+	if ((record_id.substring(0, 2) != 'TN') && (record_id.substring(0, 5) != 'dedup')) { //skip PrimoCentral records and dedup records
             $(this.parentNode).append("<a class='showPNX' data-pnx='" + record_id + "' style='font-size:0.5em;'>Show PNX</a>");
             $('.showPNX').live('click',
             function() {
