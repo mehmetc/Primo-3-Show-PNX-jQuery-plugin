@@ -7,8 +7,8 @@
  *
  * Version: 0.1
  *
- * Libis (c) 2010
- * Mehmet Celik
+ * Libis (c) 2010 -- BSD license
+ * Mehmet Celik -- mehmet.celik at libis.be
  * 
  */
 var pnx_record = null;

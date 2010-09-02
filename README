@@ -1,0 +1,39 @@
+jQuery ShowPNX plugin for Primo v3.0
+Creates a "Show PNX" link for local records in the resultset.
+
+(c) 2010 LIBIS -- BSD license
+Mehmet Celik -- mehmet.celik at libis.be
+
+
+Installing the plugin in Primo
+------------------------------
+- Make sure you can access the Primo WebServices
+  Configure the correct IP ranges in our case our Campus in the 'WS and XS IP' mapping table 
+
+- Create a directory under fe_web and copy the show_pnx.js file to this directory
+
+  $ fe_web
+  $ mkdir ADDONS
+  $ cd ADDONS
+  $ cp [PATH TO FILE]/show_pnx.js ./
+
+Replace [PATH TO FILE] with the actual path of the file :)
+
+- Go to your 'Views Wizard' and add a custom tile to the end of your customized layout set. You have to do this for the 3 pages.
+  For details on how to do this look in the Primo manuals or contact me if you get stuck. 
+  Create a new file show_pnx.jsp in the ADDONS directory and add this line
+
+     <script type="text/javascript" src="../ADDONS/show_pnx.js"></script>
+
+  set the path to this file as your custom tile path this should be ../ADDONS/show_pnx.jsp
+
+- Deploy your view and you should see a 'Show PNX' link under the material type icon. 
+
+
+
+Remarks
+-------
+- Doesn't work for Primo Central records. PC is a distributed search engine and probably has a different configuration for every customer.
+- Not tested on Internet Explorer.
+- When you restrict the access to the WebServices through 'WS and XS IP' mapping table be aware that the link will not work in certain situations.
+ 
