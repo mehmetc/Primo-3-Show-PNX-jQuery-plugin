@@ -5,7 +5,7 @@
  * This plugin uses the Primo Web Services to return data please make sure
  * the are not blocked or restricted by a Firewall or by Configuration
  *
- * Version: 0.1
+ * Version: 0.2
  *
  * Libis (c) 2010 -- BSD license
  * Mehmet Celik -- mehmet.celik at libis.be
