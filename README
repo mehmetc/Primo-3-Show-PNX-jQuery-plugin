@@ -1,7 +1,7 @@
 jQuery ShowPNX plugin for Primo v3.0
 Creates a "Show PNX" link for local records in the resultset.
 
-(c) 2010 LIBIS -- BSD license
+(c) 2010-2011 LIBIS -- BSD license
 Mehmet Celik -- mehmet.celik at libis.be
 
 
@@ -33,6 +33,5 @@ Replace [PATH TO FILE] with the actual path of the file :)
 
 Remarks
 -------
-- Not tested on Internet Explorer.
 - When you restrict the access to the WebServices through 'WS and XS IP' mapping table be aware that the link will not work in certain situations.
 - Will not show dedup pnx records 
