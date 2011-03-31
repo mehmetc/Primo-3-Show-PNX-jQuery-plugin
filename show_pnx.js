@@ -60,9 +60,9 @@ jQuery(document).ready(function() {
                 var strpnx = "";
                 pnx_record = $(xmlpnx).find('record').eq(0);
 //PRIMO CENTRAL records have a namespace
-		if (pnx_record.size() == 0){
-		    pnx_record = $(xmlpnx).find('prim\\:record').eq(0);	
-		}
+		            if (pnx_record.size() == 0){
+                  pnx_record = $(xmlpnx).find('[nodeName="prim:record"]').eq(0);
+		            }
 
                 if (pnx_record.size() > 0) {
                   if (window.ActiveXObject) {
