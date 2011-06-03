@@ -19,6 +19,8 @@ Installing the plugin in Primo
 
 Replace [PATH TO FILE] with the actual path of the file :)
 
+- in the show_pnx.js file update the defaultInstitutionCode variable with the code from your institution.
+
 - Go to your 'Views Wizard' and add a custom tile to the end of your customized layout set. You can do this for the 3 pages(home, brief, full).
   For details on how to do this look in the Primo manuals or contact me if you get stuck. 
   Create a new file show_pnx.jsp in the ADDONS directory and add this line
@@ -31,8 +33,16 @@ Replace [PATH TO FILE] with the actual path of the file :)
 
 OR
 
-If you just want to use this without changing your Primo setup. You can create a bookmark(let) with the following snippet.
-	javascript:var s=document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='https://github.com/mehmetc/Primo-3-Show-PNX-jQuery-plugin/raw/master/show_pnx.js';void(0);
+If you just want to use this without changing your Primo setup. You can create a bookmark(let) with the following snippet. Set your institution code
+in the bookmarklet!
+
+	javascript:var s=document.createElement('script');
+			   s.type='text/javascript';
+			   document.body.appendChild(s);
+			   s.src='https://github.com/mehmetc/Primo-3-Show-PNX-jQuery-plugin/raw/master/show_pnx.js';
+			   defaultInstitutionCode='[YOUR INSTITUTIONCODE HERE]';
+			   void(0);
+			
 Then go to the brief results page and click the bookmarklet. You should see a 'show PNX' link under the resource icon.
 
 Remarks
