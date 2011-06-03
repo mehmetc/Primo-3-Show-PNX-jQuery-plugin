@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
 		var result = "";
         var search = "local";
 		
-		if (!defined institutionCode)
+		if (typeof institutionCode == 'undefined')
 		  institutionCode = defaultInstitutionCode;
 		}
 
