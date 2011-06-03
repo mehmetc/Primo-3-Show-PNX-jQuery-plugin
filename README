@@ -40,7 +40,7 @@ in the bookmarklet!
 			   s.type='text/javascript';
 			   document.body.appendChild(s);
 			   s.src='https://github.com/mehmetc/Primo-3-Show-PNX-jQuery-plugin/raw/master/show_pnx.js';
-			   defaultInstitutionCode='[YOUR INSTITUTIONCODE HERE]';
+			   setTimeout(function(){defaultInstitutionCode='YOUR INSTITUTIONCODE HERE'},1000);
 			   void(0);
 			
 Then go to the brief results page and click the bookmarklet. You should see a 'show PNX' link under the resource icon.
@@ -49,3 +49,4 @@ Remarks
 -------
 - When you restrict the access to the WebServices through 'WS and XS IP' mapping table be aware that the link will not work in certain situations.
 - Will not show dedup pnx records 
+- Fails for 'Web of Science' records
