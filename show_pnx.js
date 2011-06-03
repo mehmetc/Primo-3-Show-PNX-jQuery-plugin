@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
 	
 	
 	//Setup container for PNX record
-    jQuery('body').append("<div id='PNXData' style='display:none; position:absolute; top:0; bottom:0; left:0;background-color: black; color:white; height: 100%; z-index: 1000; width: 100%; overflow:auto;'><div id='PNXData_close' style='position:absolute; top:0; right:0; background-color:red; font-size=1.5em;'>CLOSE</div><div id='PNXData_body'></div></div>")
+    jQuery('body').append("<div id='PNXData' style='display:none; position:absolute; top:0; bottom:0; left:0;background-color: black; color:white; height: 100%; z-index: 1000; width: 100%; overflow:auto;'><div id='PNXData_close' style='position:absolute; top:0; right:0; background-color:red; font-size=1.5em;'>CLOSE</div><div id='PNXData_body'></div></div>");
     jQuery('#PNXData_close').click(function() {
         jQuery('#PNXData').hide();
     });
