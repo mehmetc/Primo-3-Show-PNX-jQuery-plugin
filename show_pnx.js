@@ -57,10 +57,10 @@ function loadPNXRecord(recordId, institutionCode) {
     pnxRecord = $(xmlpnx).find('record').eq(0);
 
     //PRIMO CENTRAL records have a namespace prefix. Local PNX records don't
-    if (pnx_record.size() == 0){
-        pnx_record = $(xmlpnx).find('[nodeName="prim:record"]').eq(0);      
-        if(pnx_record.size() == 0) { //some jQuery versions refuse the above query
-           pnx_record = $(xmlpnx).find('prim\\:record').eq(0);      
+    if (pnxRecord.size() == 0){
+        pnxRecord = $(xmlpnx).find('[nodeName="prim:record"]').eq(0);      
+        if(pnxRecord.size() == 0) { //some jQuery versions refuse the above query
+           pnxRecord = $(xmlpnx).find('prim\\:record').eq(0);      
         }
     }
 
