@@ -3,18 +3,19 @@
  * jQuery ShowPNX plugin for Primo v3.0
  *
  * This plugin uses the Primo Web Services to return data please make sure
- * the are not blocked or restricted by a Firewall or by Configuration
+ * they are not blocked or restricted by a Firewall or by Configuration.
+ * Rule of thumb: If the PRIMO API works this script works
  *
  * !!!!!!!!!!!! update the 'defaultInstitutioncode' variable !!!!!!!!!!!!!!!
  *
  * Version: 0.3
  *
- * Libis (c) 2010
+ * Libis (c) 2010 - 2012
  * Mehmet Celik
  * 
  */
 var pnxRecord = null;
-var defaultInstitutionCode = 'KUL';
+var defaultInstitutionCode = 'KUL'; // <--- UPDATE this when used locally
 
 function loadPNXRecord(recordId, institutionCode) {
 	var result = "";
